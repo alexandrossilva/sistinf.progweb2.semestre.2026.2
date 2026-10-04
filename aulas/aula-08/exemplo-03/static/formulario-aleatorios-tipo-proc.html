@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Números Aleatórios</title>
+</head>
+<body>
+    <h1>Números Aleatórios</h1>
+    <form action="/aleatorios" method="post">
+        <label for="n">Quantidade de números aleatórios:</label>
+        <input type="number" name="n" id="n" required>
+        <br>
+        <label for="min">Tipo de resultado:</label>
+        <select name="tipo" id="tipo" required>
+            <option value="0">Lista de números</option>
+            <option value="1">Lista de números + Soma</option>
+            <option value="2">Lista de números + Média</option>
+        </select>
+        <button type="submit">Gerar</button>
+    </form>
+</body>
+</html>

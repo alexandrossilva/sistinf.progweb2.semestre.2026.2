@@ -1,0 +1,19 @@
+{
+  "name": "exemplo-04",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "servidor.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "moment": "^2.31.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6"
+  }
+}

@@ -1,0 +1,11 @@
+* {
+    margin: 2px;
+}
+
+input[type="number"] {
+    width: 50px;
+}
+
+#n2 {
+    background-color: yellow;
+}
