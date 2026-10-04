@@ -148,3 +148,6 @@ vite.config.ts.timestamp-*
 
 # Diretório temporário
 /temp
+
+# Arquivos package-lock.json
+package-lock.json
