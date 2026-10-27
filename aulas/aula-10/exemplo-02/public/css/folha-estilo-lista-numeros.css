@@ -1,0 +1,13 @@
+* {
+    text-align: center;
+}
+
+table {
+    margin: auto;
+    border-collapse: collapse;
+}
+
+table tr td {
+    border: 1px solid black;
+    text-align: center;
+}
