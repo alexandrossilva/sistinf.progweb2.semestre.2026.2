@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Série de Fibonacci</title>
+    <link rel="stylesheet" href="folha-estilo.css">
+</head>
+<body>
+    <h1>Série de Fibonacci</h1>
+    <p><%= termos.length %> primeiro(s) termo(s)</p>
+    <table>
+        <tr>
+            <% for (let i = 0; i < termos.length; i++) { %>
+                <td><%= termos[i] %></td>
+            <% } %>
+        </tr>
+    </table>
+    <p><a href="consulta-serie-fib.html">Nova Consulta</a></p>
+</body>
+</html>
