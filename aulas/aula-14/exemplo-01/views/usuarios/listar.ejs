@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuários</title>
+    <link rel="stylesheet" href="/css/folha-estilo-listagem.css">
+</head>
+<body>
+    <form action=""></form>
+    <h1>Usuários</h1>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>E-mail</th>
+            <th>Login</th>
+            <th class="text-center">Editar</th>
+            <th class="text-center">Excluir</th>
+        </tr>
+        <% for (let i = 0; i < usuarios.length; i++) { %>
+            <tr>
+                <td><%= usuarios[i].id %></td>
+                <td><%= usuarios[i].nome %></td>
+                <td><%= usuarios[i].email %></td>
+                <td><%= usuarios[i].login %></td>
+                <td class="text-center"><a href="/usuarios/<%= usuarios[i].id %>/edicao"><img src="img/edicao-icone16.png" alt="Editar Usuário"></a></td>
+                <td class="text-center">
+                    <img src="img/exclusao-icone16.png" alt="Excluir Usuário">
+                    <form action="/usuarios/<%= usuarios[i].id %>?_method=DELETE" method="post" hidden></form>
+                </td>
+            </tr>
+        <% } %>
+    </table>
+    <p><a href="/usuarios/cadastro">Cadastrar Novo Usuário</a></p>
+    <p><a href="/">Retornar ao Início</a></p>
+</body>
+<script>
+    document.querySelectorAll("td img").forEach((img) => {
+        img.addEventListener("click", (event) => {
+            event.target.nextElementSibling.submit();
+        });
+    });
+</script>
+</html>

@@ -1,0 +1,26 @@
+h1, p {
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+    margin: auto;
+}
+
+td, th {
+    border: 1px solid black;
+    padding: 2px;
+}
+
+th {
+    background: #eee;
+    text-align: left;
+}
+
+td img {
+    cursor: pointer;
+}
+
+.text-center {
+    text-align: center;
+}
